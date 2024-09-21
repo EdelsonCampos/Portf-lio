@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    color: #f5f5f5; 
+}
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: white;
+}
+section {
+    margin-bottom:150px;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 60vw; 
+    max-width: 800px; 
+    padding: 2rem 3rem; 
+    background-color: #1e1e1e; 
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px, rgba(0, 0, 0, 0.2) 0px 8px 16px; 
+    border-radius: 9px;
+}
+
+section h2 {
+    color: #f5f5f5;
+    font-size: 2rem; 
+    margin-bottom: 1.5rem; 
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: #f5f5f5;
+    font-size: 1.4rem; /* Tamanho da fonte ajustado */
+    margin-bottom: 0.5rem; /* Margin ajustada para uma aparência mais limpa */
+}
+
+form input, form textarea {
+    padding: 12px;
+    outline: none;
+    border: 2px solid #4b0082; /* Cor da borda em roxo escuro */
+    font-size: 1.4rem; /* Ajustado para consistência */
+    transition: all 0.3s; /* Transição mais rápida para interação */
+    border-radius: 6px; /* Bordas arredondadas mais suaves */
+    background-color: #1e1e1e; /* Fundo ajustado para um tom mais escuro */
+    color: #f5f5f5; /* Texto em tom claro para contraste */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4b0082; /* Cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(75, 0, 130, 0.5); /* Efeito de sombra ao focar */
+}
+
+form button {
+    padding: 12px 24px; /* Ajustado para um tamanho mais elegante */
+    cursor: pointer;
+    font-size: 1.4rem; /* Tamanho da fonte ajustado */
+    background: #4b0082; /* Cor de fundo ajustada para roxo escuro */
+    border: 2px solid #4b0082; /* Cor da borda em roxo escuro */
+    color: white; /* Cor do texto em branco para contraste */
+    transition: all 0.3s;
+    margin-top: 1.5rem; /* Margin ajustada para espaçamento uniforme */
+    border-radius: 6px; /* Bordas arredondadas mais suaves */
+}
+
+form button:hover {
+    background: white; /* Cor de fundo ao passar o mouse */
+    color: #4b0082; /* Cor do texto ajustada */
+    border-color: #4b0082; /* Cor da borda ao passar o mouse */
+    box-shadow: 0 0 5px rgba(75, 0, 130, 0.5); /* Efeito de sombra ao passar o mouse */
+}
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #4b0082;
+    flex-direction: column;
+    padding: 2rem; /* Padding ajustado para melhor espaçamento */
+}
+
+.text {
+    font-size: 3.5rem; /* Tamanho da fonte ajustado */
+    color: #f5f5f5;
+    margin-bottom: 1.5rem; /* Margin ajustada para espaçamento mais elegante */
+}
+
+.paragrafo {
+    color: #f5f5f5;
+    margin-bottom: 2rem; /* Margin ajustada para espaçamento uniforme */
+}
+
+.btn {
+    padding: 12px 36px; /* Ajustado para um tamanho mais elegante */
+    background: #4b0082; /* Cor de fundo em roxo escuro */
+    text-decoration: none;
+    color: white; /* Cor do texto ajustada para contraste */
+    font-size: 1.6rem; /* Tamanho da fonte ajustado */
+    border: 2px solid #4b0082; /* Cor da borda em roxo escuro */
+    transition: all 0.3s;
+    border-radius: 6px; /* Bordas arredondadas mais suaves */
+}
+
+.btn:hover {
+    background: white; /* Cor de fundo ao passar o mouse */
+    color: #4b0082; /* Cor do texto ajustada */
+    border-color: #4b0082; /* Cor da borda ao passar o mouse */
+    box-shadow: 0 0 5px rgba(75, 0, 130, 0.5); /* Efeito de sombra ao passar o mouse */
+}
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #4b0082; /* Alterado para roxo escuro */
+    border-bottom: 3px solid #4b0082; /* Alterado para roxo escuro */
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #4b0082; /* Alterado para roxo escuro */
+        border-bottom: 3px solid #4b0082; /* Alterado para roxo escuro */
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #4b0082; /* Alterado para roxo escuro */
+    }
+}

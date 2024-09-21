@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contato.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../Portfolio/index.html" class="active"> Home</a>
+            <a href="../Slider3D/index.html" >Serviços</a>
+            <a href="../Portfolio/LinksContato.htm" >Tecnologias</a>
+            <a href="#" >Cursos</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Contato</h2>
+
+        <form action="https://api.staticforms.xyz/submit" method="post">
+
+            <label>Nome do cliente</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off"required>
+            <label>Mensagem</label>
+
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem"required></textarea>
+            <button type="submit">Enviar</button>
+
+
+            <input type="hidden" name="accessKey" value="ac1afc71-23fb-463e-afc0-fe1bf0659432">
+
+            <input type="hidden" name="redirectTo" value="file:///C:/Users/User/OneDrive/%C3%81rea%20de%20Trabalho/Projects/BATMAN/obrigado.html">
+
+        </form>
+    </section>
+
+    <div id="confirmation-message" style="display: none;">
+        <h2>Mensagem enviada com sucesso!</h2>
+        <p>Responderei o mais rápido possível.</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Previne o envio padrão do formulário
+
+        // Simula o envio do formulário (remover esta parte se você estiver usando um backend real)
+        setTimeout(function() {
+            document.getElementById('contact-form').style.display = 'none';
+            document.getElementById('confirmation-message').style.display = 'block';
+        }, 1000); // Simula o tempo de envio do formulário
+    });
+</script>
+</body>
+
+</html>
